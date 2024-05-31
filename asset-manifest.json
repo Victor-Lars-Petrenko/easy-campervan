@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/easy-campervan/static/css/main.7b16fc3b.css",
+    "main.js": "/easy-campervan/static/js/main.e2de2fdd.js",
+    "index.html": "/easy-campervan/index.html",
+    "main.7b16fc3b.css.map": "/easy-campervan/static/css/main.7b16fc3b.css.map",
+    "main.e2de2fdd.js.map": "/easy-campervan/static/js/main.e2de2fdd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b16fc3b.css",
+    "static/js/main.e2de2fdd.js"
+  ]
+}
