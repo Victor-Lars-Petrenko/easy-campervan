@@ -1,5 +1,16 @@
 @import-normalize;
 
+:root {
+  --main-text-color: #101828;
+  --accessory-color: #475467;
+  --btn-text-color: #ffffff;
+  --btn-color: #e44848;
+  --btn-hover-color: #d84343;
+  --rating-color: #ffc531;
+  --inputs-color: #f7f7f7;
+  --categories-color: #f2f4f7;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
