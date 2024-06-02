@@ -1,11 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import { BrowserRouter } from "react-router-dom";
+
 import App from "./components/App";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
+import "./index.css";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename="/easy-campervan">
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );

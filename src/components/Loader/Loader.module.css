@@ -1,0 +1,5 @@
+.loader {
+  width: 200px;
+  margin: 20px auto;
+  color: var(--btn-color);
+}
