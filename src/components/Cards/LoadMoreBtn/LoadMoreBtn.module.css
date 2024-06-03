@@ -1,0 +1,16 @@
+.btn {
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: var(--main-text-color);
+  border: 1px solid rgba(var(--accessory-color), 0.2);
+  border-radius: 200px;
+  padding: 16px 32px;
+  width: 145px;
+  height: 56px;
+  transition: border-color 150ms ease-in-out 150ms;
+}
+
+.btn:hover {
+  border-color: var(--btn-color);
+}

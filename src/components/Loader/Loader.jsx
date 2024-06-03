@@ -4,7 +4,7 @@ import css from "./Loader.module.css";
 const Loader = () => {
   return (
     <div className={css.loader}>
-      <Bars visible={true} />
+      <Bars visible={true} color="#e44848" />
     </div>
   );
 };
