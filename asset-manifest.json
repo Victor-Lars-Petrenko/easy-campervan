@@ -1,13 +1,22 @@
 {
   "files": {
-    "main.css": "/easy-campervan/static/css/main.7b16fc3b.css",
-    "main.js": "/easy-campervan/static/js/main.e2de2fdd.js",
+    "main.css": "/easy-campervan/static/css/main.8865a7cc.css",
+    "main.js": "/easy-campervan/static/js/main.4175868a.js",
+    "static/js/58.5e529f85.chunk.js": "/easy-campervan/static/js/58.5e529f85.chunk.js",
+    "static/css/133.979595fe.chunk.css": "/easy-campervan/static/css/133.979595fe.chunk.css",
+    "static/js/133.be72c3da.chunk.js": "/easy-campervan/static/js/133.be72c3da.chunk.js",
+    "static/js/549.7a1bb8b7.chunk.js": "/easy-campervan/static/js/549.7a1bb8b7.chunk.js",
+    "static/media/icons.svg": "/easy-campervan/static/media/icons.dd7efadb666dd00e972204166af30570.svg",
     "index.html": "/easy-campervan/index.html",
-    "main.7b16fc3b.css.map": "/easy-campervan/static/css/main.7b16fc3b.css.map",
-    "main.e2de2fdd.js.map": "/easy-campervan/static/js/main.e2de2fdd.js.map"
+    "main.8865a7cc.css.map": "/easy-campervan/static/css/main.8865a7cc.css.map",
+    "main.4175868a.js.map": "/easy-campervan/static/js/main.4175868a.js.map",
+    "58.5e529f85.chunk.js.map": "/easy-campervan/static/js/58.5e529f85.chunk.js.map",
+    "133.979595fe.chunk.css.map": "/easy-campervan/static/css/133.979595fe.chunk.css.map",
+    "133.be72c3da.chunk.js.map": "/easy-campervan/static/js/133.be72c3da.chunk.js.map",
+    "549.7a1bb8b7.chunk.js.map": "/easy-campervan/static/js/549.7a1bb8b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b16fc3b.css",
-    "static/js/main.e2de2fdd.js"
+    "static/css/main.8865a7cc.css",
+    "static/js/main.4175868a.js"
   ]
 }
