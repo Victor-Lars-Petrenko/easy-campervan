@@ -1,0 +1,29 @@
+.cardHeading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardHeadingRight {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+
+.cardTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 125%;
+  color: rgb(var(--main-text-color-rgb));
+}
+
+.heartIcon {
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: rgb(var(--main-text-color-rgb));
+}
+
+.heartIconFavorite {
+  fill: var(--btn-color);
+  stroke: none;
+}

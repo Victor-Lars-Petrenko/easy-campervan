@@ -1,0 +1,42 @@
+.inputButtonWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid rgba(var(--main-text-color-rgb), 0.2);
+  border-radius: 10px;
+  width: 112px;
+  height: 95px;
+  transition: all 0.3s ease;
+}
+
+.inputButton {
+  display: none;
+}
+
+.inputIcon {
+  width: 32px;
+  height: 32px;
+  stroke: rgb(var(--main-text-color-rgb));
+  fill: none;
+}
+
+.inputIconSpec {
+  stroke: none;
+  fill: rgb(var(--main-text-color-rgb));
+}
+
+.inputIconType {
+  width: 40px;
+  height: 28px;
+}
+
+.inputBtnText {
+  font-weight: 500;
+  line-height: 125%;
+  font-size: 16px;
+  text-align: center;
+  color: rgb(var(--main-text-color-rgb));
+}

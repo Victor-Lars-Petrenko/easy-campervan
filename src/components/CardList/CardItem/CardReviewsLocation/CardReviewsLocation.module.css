@@ -1,0 +1,37 @@
+.cardReviewsLocation {
+  display: flex;
+  gap: 16px;
+}
+
+.cardWrapper {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.starIcon {
+  stroke: none;
+  fill: var(--rating-color);
+}
+
+.locationIcon {
+  stroke: rgb(var(--main-text-color-rgb));
+  fill: none;
+}
+
+.cardText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgb(var(--main-text-color-rgb));
+}
+
+.cardReviewsText {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}

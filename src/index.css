@@ -1,14 +1,20 @@
 @import-normalize;
 
 :root {
-  --main-text-color: #101828;
-  --accessory-color: 71, 84, 103;
+  --main-text-color-rgb: 16, 24, 40;
+  --accessory-color-rgb: 71, 84, 103;
   --btn-text-color: #ffffff;
   --btn-color: #e44848;
   --btn-hover-color: #d84343;
   --rating-color: #ffc531;
   --inputs-color: #f7f7f7;
   --categories-color: #f2f4f7;
+}
+
+html,
+body,
+#root {
+  width: 1440px;
 }
 
 body {
@@ -53,4 +59,17 @@ button {
   cursor: pointer;
   border: none;
   font-family: inherit;
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+label,
+div,
+li {
+  box-sizing: border-box;
 }

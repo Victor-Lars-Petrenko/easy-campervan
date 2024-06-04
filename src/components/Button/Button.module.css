@@ -1,0 +1,43 @@
+.btn {
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: var(--btn-text-color);
+  background-color: var(--btn-color);
+  border-radius: 200px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  height: 56px;
+  transition: all 150ms ease-in-out 150ms;
+}
+
+.primaryBtn {
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 166px;
+}
+
+.submitBtn {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.primaryBtn:hover,
+.primaryBtn:focus,
+.submitBtn:hover,
+.submitBtn:focus {
+  background-color: var(--btn-hover-color);
+}
+
+.loadMoreBtn {
+  color: rgb(var(--main-text-color-rgb));
+  border: 1px solid rgba(var(--accessory-color-rgb), 0.2);
+  background-color: transparent;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.loadMoreBtn:hover,
+.loadMoreBtn:focus {
+  border-color: var(--btn-color);
+}

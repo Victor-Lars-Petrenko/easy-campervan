@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-import items from "../../assets/NavBarItems";
+import items from "../../assets/items/NavBarItems";
 
 import sprite from "../../assets/images/icons.svg";
 import css from "./NavBar.module.css";

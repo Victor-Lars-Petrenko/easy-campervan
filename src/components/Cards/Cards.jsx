@@ -1,6 +1,7 @@
-import CardList from "./CardList";
-import css from "./Cards.module.css";
+import CardList from "components/CardList";
 import LoadMoreBtn from "./LoadMoreBtn";
+
+import css from "./Cards.module.css";
 
 const Cards = () => {
   return (

@@ -1,0 +1,56 @@
+.filtersForm {
+  width: 360px;
+}
+
+.labelInputLocation {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(var(--main-text-color-rgb), 0.6);
+  margin-bottom: 8px;
+}
+
+.locationInputWrap {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.inputLocation {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 18px 18px 18px 44px;
+  width: 360px;
+  height: 56px;
+  line-height: 125%;
+  font-size: 16px;
+  color: rgb(var(--main-text-color-rgb));
+  opacity: 0.6;
+  background-color: var(--inputs-color);
+  transition: opacity 0.3s ease;
+}
+
+.inputIcon {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  fill: none;
+  stroke: rgb(var(--main-text-color-rgb));
+  opacity: 0.6;
+  width: 18px;
+  height: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.inputLocation:not(:placeholder-shown) + .inputIcon,
+.inputLocation {
+  opacity: 1;
+}
+
+.filtersHeading {
+  margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgb(var(--accessory-color-rgb));
+}

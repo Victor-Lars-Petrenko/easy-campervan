@@ -1,0 +1,35 @@
+.fieldset {
+  margin: 0;
+  border: none;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.lagrerMargin {
+  margin-bottom: 64px;
+}
+
+.legend {
+  margin-bottom: 48px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: rgb(var(--main-text-color-rgb));
+  position: relative;
+}
+
+.legend::after {
+  position: absolute;
+  content: "";
+  width: 360px;
+  height: 1px;
+  left: 0;
+  top: 200%;
+  background-color: rgba(var(--main-text-color-rgb), 0.1);
+}
+
+.inputButtonList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+}
