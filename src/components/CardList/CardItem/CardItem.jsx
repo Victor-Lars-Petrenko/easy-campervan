@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 import CardHeading from "./CardHeading";
 import CardReviewsLocation from "./CardReviewsLocation";
@@ -8,7 +8,7 @@ import Button from "components/Button";
 import css from "./CardItem.module.css";
 
 const CardItem = ({ card }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className={css.cardItem}>
