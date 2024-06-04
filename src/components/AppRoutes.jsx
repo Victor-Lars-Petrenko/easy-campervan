@@ -1,11 +1,11 @@
-import { lazy } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { lazy } from 'react';
+import { Navigate, Route, Routes } from 'react-router-dom';
 
-import SharedLayout from "./SharedLayout/SharedLayout";
+import SharedLayout from './SharedLayout/SharedLayout';
 
-const HomePage = lazy(() => import("../pages/HomePage"));
-const Catalog = lazy(() => import("../pages/Catalog"));
-const Favourites = lazy(() => import("../pages/Favourites"));
+const HomePage = lazy(() => import('../pages/HomePage'));
+const Catalog = lazy(() => import('../pages/Catalog'));
+const Favourites = lazy(() => import('../pages/Favourites'));
 
 const AppRoutes = () => {
   return (
@@ -14,7 +14,7 @@ const AppRoutes = () => {
         <Route index element={<HomePage />} />
         <Route path="catalog" element={<Catalog />} />
         <Route path="favorites" element={<Favourites />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Route>
     </Routes>
   );
