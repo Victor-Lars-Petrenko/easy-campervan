@@ -12,7 +12,7 @@
 
         var basePath = '/easy-campervan';
 
-        if (currentPath) {
+        if (!currentPath.startsWith(basePath)) {
           var newUrl = basePath + currentPath + currentSearch + currentHash;
           window.location.replace(newUrl);
         }
