@@ -1,0 +1,48 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: var(--main-text-color);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 20px;
+}
+
+.description {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.description h1 {
+  color: var(--main-text-color);
+}
+
+.description p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: var(--main-text-color);
+}
+
+.footer {
+  background-color: var(--main-text-color);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}

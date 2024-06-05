@@ -7,7 +7,7 @@ import css from "./NavBar.module.css";
 
 const NavBar = () => {
   const elements = items.map(({ id, linkTo, text, icon }) => (
-    <li key={id}>
+    <li key={id} className={css.text}>
       <NavLink to={linkTo} className={css.link}>
         <svg className={css.icon}>
           <use href={`${sprite}#${icon}`}></use>

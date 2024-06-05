@@ -1,4 +1,4 @@
-# <img src="./src/assets/images/logo.png" alt="logo" width="100" height="30" >
+# <img src="./src/assets/images/logo.png" alt="logo" width="100" height="100" >
 
 ## Eng
 
@@ -45,7 +45,7 @@ trips and enjoy their time on the road.
 
 1. Clone the repository: git clone
    https://github.com/yourusername/easycampervan.git
-2. Navigate to the project directory: cd easycampervan
+2. Navigate to the project directory: cd easy-campervan
 3. Install dependencies: npm install
 4. Start the development server: npm start
 
