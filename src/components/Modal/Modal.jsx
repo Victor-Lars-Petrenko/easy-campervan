@@ -1,6 +1,6 @@
 import { useEffect, useCallback } from "react";
 import { createPortal } from "react-dom";
-import css from "./Modal.module.css";
+// import css from "./Modal.module.css";
 
 const Modal = ({ close, children }) => {
   const closeModal = useCallback(
@@ -32,8 +32,8 @@ const Modal = ({ close, children }) => {
   const modalRoot = document.querySelector("#modal-root");
 
   return createPortal(
-    <div className={css.overlay} onClick={closeModal}>
-      <div className={css.modal}>{children}</div>
+    <div onClick={closeModal}>
+      <div>{children}</div>
     </div>,
     modalRoot
   );
