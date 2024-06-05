@@ -9,7 +9,7 @@ const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchCampers({ page: 1 }));
+    dispatch(fetchCampers());
   }, [dispatch]);
 
   return <AppRoutes />;

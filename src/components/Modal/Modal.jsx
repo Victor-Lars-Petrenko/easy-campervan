@@ -1,16 +1,11 @@
-import React, { useEffect, useCallback } from "react";
+import { useEffect, useCallback } from "react";
 import { createPortal } from "react-dom";
+import css from "./Modal.module.css";
 
-import sprite from "../../assets/images/icons.svg";
-
-import css from "./modal.module.css";
-
-const modalRoot = document.getElementById("modal-root");
-
-const Modal = ({ isOpen, close, children }) => {
+const Modal = ({ close, children }) => {
   const closeModal = useCallback(
-    ({ target, currentTarget, code }) => {
-      if (target === currentTarget || code === "Escape") {
+    e => {
+      if (e.target === e.currentTarget || e.code === "Escape") {
         close();
       }
     },
@@ -19,22 +14,27 @@ const Modal = ({ isOpen, close, children }) => {
 
   useEffect(() => {
     document.addEventListener("keydown", closeModal);
-    return () => document.removeEventListener("keydown", closeModal);
+
+    const scrollY = window.scrollY;
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollY}px`;
+
+    return () => {
+      document.removeEventListener("keydown", closeModal);
+
+      const scrollY = document.body.style.top;
+      document.body.style.position = "";
+      document.body.style.top = "";
+      window.scrollTo(0, parseInt(scrollY || "0") * -1);
+    };
   }, [closeModal]);
 
+  const modalRoot = document.querySelector("#modal-root");
+
   return createPortal(
-    <>
-      {isOpen && (
-        <div onClick={closeModal} className={css.modal}>
-          <button onClick={close}>
-            <svg className={css.iconCross}>
-              <use href={`${sprite}#icon-cross`} />
-            </svg>
-          </button>
-          {children}
-        </div>
-      )}
-    </>,
+    <div className={css.overlay} onClick={closeModal}>
+      <div className={css.modal}>{children}</div>
+    </div>,
     modalRoot
   );
 };

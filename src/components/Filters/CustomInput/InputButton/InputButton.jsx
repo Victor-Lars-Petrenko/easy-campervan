@@ -20,7 +20,9 @@ const InputButton = ({ name, icon, type, isChecked, onChange }) => {
         name={name}
         type={type}
         value={icon}
-        checked={isChecked === icon}
+        checked={
+          type === "checkbox" ? isChecked.includes(icon) : isChecked === icon
+        }
         onChange={onChange}
       />
       <svg className={iconClass}>

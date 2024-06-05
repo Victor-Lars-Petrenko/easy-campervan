@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
 
 import Button from "components/Button";
 import CustomInput from "./CustomInput";
 
 import { iconArrCheckbox, iconArrRadio } from "assets/items/iconFormItems";
+import { setFilter } from "../../redux/filter/filter-actions";
 
 import sprite from "../../assets/images/icons.svg";
 
@@ -12,20 +14,32 @@ import css from "./Filters.module.css";
 const Filters = () => {
   const initialState = {
     location: "",
-    camperEquipment: "",
+    camperEquipment: [],
     camperType: "",
   };
 
   const [filtersState, setFiltersState] = useState({ ...initialState });
+  const dispatch = useDispatch();
 
   const handleChange = ({ target }) => {
-    const { name, value } = target;
-    setFiltersState({ ...filtersState, [name]: value });
+    const { name, value, type, checked } = target;
+
+    if (type === "checkbox") {
+      setFiltersState(prevState => {
+        const newArray = checked
+          ? [...prevState[name], value]
+          : prevState[name].filter(item => item !== value);
+        return { ...prevState, [name]: newArray };
+      });
+    } else {
+      setFiltersState({ ...filtersState, [name]: value });
+    }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     console.log(filtersState);
+    dispatch(setFilter(filtersState));
   };
 
   return (

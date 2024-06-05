@@ -1,0 +1,20 @@
+.favorites {
+  padding: 100px 64px;
+}
+
+.favTextWrapper {
+  position: fixed;
+}
+
+.favText {
+  transform-origin: top left;
+  transform: rotate(40deg);
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 125%;
+  color: var(--accessory-color);
+}
+
+.cardsWrap {
+  padding-left: 424px;
+}

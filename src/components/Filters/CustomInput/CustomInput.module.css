@@ -14,7 +14,7 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 120%;
-  color: rgb(var(--main-text-color-rgb));
+  color: var(--main-text-color);
   position: relative;
 }
 

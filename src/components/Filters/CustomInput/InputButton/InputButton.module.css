@@ -19,13 +19,13 @@
 .inputIcon {
   width: 32px;
   height: 32px;
-  stroke: rgb(var(--main-text-color-rgb));
+  stroke: var(--main-text-color);
   fill: none;
 }
 
 .inputIconSpec {
   stroke: none;
-  fill: rgb(var(--main-text-color-rgb));
+  fill: var(--main-text-color);
 }
 
 .inputIconType {
@@ -38,5 +38,5 @@
   line-height: 125%;
   font-size: 16px;
   text-align: center;
-  color: rgb(var(--main-text-color-rgb));
+  color: var(--main-text-color);
 }

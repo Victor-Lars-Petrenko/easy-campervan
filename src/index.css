@@ -2,10 +2,15 @@
 
 :root {
   --main-text-color-rgb: 16, 24, 40;
+  --main-text-color: #101828;
   --accessory-color-rgb: 71, 84, 103;
+  --accessory-color: #475467;
+
   --btn-text-color: #ffffff;
+
   --btn-color: #e44848;
   --btn-hover-color: #d84343;
+
   --rating-color: #ffc531;
   --inputs-color: #f7f7f7;
   --categories-color: #f2f4f7;
