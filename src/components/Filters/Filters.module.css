@@ -30,6 +30,11 @@
   transition: opacity 0.3s ease;
 }
 
+.inputLocation:not(:placeholder-shown) + .inputIcon,
+.inputLocation {
+  opacity: 1;
+}
+
 .inputIcon {
   position: absolute;
   top: 18px;
@@ -40,11 +45,6 @@
   width: 18px;
   height: 20px;
   transition: opacity 0.3s ease;
-}
-
-.inputLocation:not(:placeholder-shown) + .inputIcon,
-.inputLocation {
-  opacity: 1;
 }
 
 .filtersHeading {

@@ -40,3 +40,54 @@
   color: var(--accessory-color);
   margin-bottom: 44px;
 }
+
+.cardNavList {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  margin-bottom: 68px;
+}
+
+.cardNavList::after {
+  position: absolute;
+  content: "";
+  width: 902px;
+  height: 1px;
+  left: 0;
+  top: 48px;
+  background-color: var(--main-text-color);
+  opacity: 0.2;
+}
+
+.cardNavBtn {
+  position: relative;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: var(--main-text-color);
+}
+
+.cardFeaturesActive::after {
+  position: absolute;
+  content: "";
+  width: 85px;
+  height: 5px;
+  left: 0;
+  top: 46px;
+  background-color: var(--btn-color);
+}
+
+.cardReviewsActive::after {
+  position: absolute;
+  content: "";
+  width: 101px;
+  height: 5px;
+  left: -10px;
+  top: 46px;
+  background-color: var(--btn-color);
+}
+
+.detailsWrap {
+  display: flex;
+  gap: 24px;
+}

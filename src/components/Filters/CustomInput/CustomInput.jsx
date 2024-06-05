@@ -6,7 +6,7 @@ const CustomInput = ({
   inputType,
   inputName,
   iconArr,
-  isChecked,
+  checkedArr,
   handleChange,
 }) => {
   let fieldsetStyle = css.fieldset;
@@ -19,13 +19,13 @@ const CustomInput = ({
     <fieldset className={fieldsetStyle}>
       <legend className={css.legend}>{text}</legend>
       <ul className={css.inputButtonList}>
-        {iconArr.map((icon) => (
+        {iconArr.map(icon => (
           <li key={`${icon}CustomInput`}>
             <InputButton
               name={inputName}
               icon={icon}
               type={inputType}
-              isChecked={isChecked}
+              checkedArr={checkedArr}
               onChange={handleChange}
             />
           </li>

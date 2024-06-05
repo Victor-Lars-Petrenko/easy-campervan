@@ -66,7 +66,7 @@ const Filters = () => {
         inputType="checkbox"
         inputName="camperEquipment"
         iconArr={iconArrCheckbox}
-        isChecked={filtersState.camperEquipment}
+        checkedArr={filtersState.camperEquipment}
         handleChange={handleChange}
       />
       <CustomInput
@@ -74,7 +74,7 @@ const Filters = () => {
         inputType="radio"
         inputName="camperType"
         iconArr={iconArrRadio}
-        isChecked={filtersState.camperType}
+        checkedArr={filtersState.camperType}
         handleChange={handleChange}
       />
       <Button type="submit" text="Search" btnStyle="submitBtn" />

@@ -4,7 +4,7 @@ import sprite from "../../../../assets/images/icons.svg";
 
 import css from "./InputButton.module.css";
 
-const InputButton = ({ name, icon, type, isChecked, onChange }) => {
+const InputButton = ({ name, icon, type, checkedArr, onChange }) => {
   let iconClass = css.inputIcon;
   if (icon === "AC") {
     iconClass += ` ${css.inputIconSpec}`;
@@ -13,16 +13,21 @@ const InputButton = ({ name, icon, type, isChecked, onChange }) => {
     iconClass += ` ${css.inputIconSpec} ${css.inputIconType}`;
   }
 
+  let labelClass = css.inputButtonWrapper;
+  if (checkedArr.includes(icon)) {
+    labelClass += ` ${css.activeButtonWrapper}`;
+  }
+
+  const isChecked = checkedArr.includes(icon);
+
   return (
-    <label className={css.inputButtonWrapper}>
+    <label className={labelClass}>
       <input
         className={css.inputButton}
         name={name}
         type={type}
         value={icon}
-        checked={
-          type === "checkbox" ? isChecked.includes(icon) : isChecked === icon
-        }
+        checked={isChecked}
         onChange={onChange}
       />
       <svg className={iconClass}>
