@@ -18,3 +18,20 @@
 .cardsWrap {
   padding-left: 424px;
 }
+
+.nothingWrap {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nothingText {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 125%;
+  color: var(--accessory-color);
+  width: 800px;
+  text-align: center;
+}

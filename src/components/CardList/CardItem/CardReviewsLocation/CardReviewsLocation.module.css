@@ -20,7 +20,7 @@
 }
 
 .locationIcon {
-  stroke: rgb(var(--main-text-color-rgb));
+  stroke: var(--main-text-color);
   fill: none;
 }
 
@@ -28,7 +28,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  color: rgb(var(--main-text-color-rgb));
+  color: var(--main-text-color);
 }
 
 .cardReviewsText {

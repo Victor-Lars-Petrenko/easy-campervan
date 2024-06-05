@@ -3,8 +3,9 @@ import CardHeading from "./CardHeading";
 import CardReviewsLocation from "./CardReviewsLocation";
 import InfoIconsList from "./InfoIconsList";
 import Button from "components/Button";
+import CardModal from "./CardModal";
+
 import css from "./CardItem.module.css";
-import Modal from "components/Modal";
 
 const CardItem = ({ card }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -45,7 +46,7 @@ const CardItem = ({ card }) => {
           />
         </div>
       </div>
-      {isModalOpen && <Modal close={close}>Hello World</Modal>}
+      {isModalOpen && <CardModal close={close} card={card} />}
     </>
   );
 };

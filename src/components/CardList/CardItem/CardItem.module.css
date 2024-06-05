@@ -43,6 +43,8 @@
 }
 
 .cardDescription {
+  line-height: 150%;
+  color: var(--accessory-color);
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;

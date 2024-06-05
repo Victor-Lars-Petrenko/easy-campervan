@@ -1,5 +1,6 @@
 .catalog {
   display: flex;
+  align-items: start;
   gap: 64px;
   padding: 100px 64px;
 }
@@ -8,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 740px;
+  height: 358px;
   width: 888px;
 }
 

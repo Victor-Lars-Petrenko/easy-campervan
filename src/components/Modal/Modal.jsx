@@ -1,6 +1,9 @@
 import { useEffect, useCallback } from "react";
 import { createPortal } from "react-dom";
-// import css from "./Modal.module.css";
+
+import sprite from "../../assets/images/icons.svg";
+
+import css from "./Modal.module.css";
 
 const Modal = ({ close, children }) => {
   const closeModal = useCallback(
@@ -32,8 +35,15 @@ const Modal = ({ close, children }) => {
   const modalRoot = document.querySelector("#modal-root");
 
   return createPortal(
-    <div onClick={closeModal}>
-      <div>{children}</div>
+    <div className={css.overlay} onClick={closeModal}>
+      <div className={css.modal}>
+        <button type="button" className={css.closeBtn} onClick={close}>
+          <svg className={css.iconCross}>
+            <use href={`${sprite}#icon-cross`} />
+          </svg>
+        </button>
+        {children}
+      </div>
     </div>,
     modalRoot
   );

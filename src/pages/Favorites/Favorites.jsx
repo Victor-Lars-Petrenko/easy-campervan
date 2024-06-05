@@ -9,14 +9,26 @@ const Favorites = () => {
   const cardsArr = useSelector(selectFavoriteCampers);
 
   return (
-    <section className={css.favorites}>
-      <div className={css.favTextWrapper}>
-        <p className={css.favText}>Enjoy your favourite Campervans</p>
-      </div>
-      <div className={css.cardsWrap}>
-        <Cards cardsArr={cardsArr} />
-      </div>
-    </section>
+    <>
+      {cardsArr.length === 0 && (
+        <div className={css.nothingWrap}>
+          <p className={css.nothingText}>
+            You haven't chosen your favorite campervans yet. You can do this in
+            the Catalog
+          </p>
+        </div>
+      )}
+      {cardsArr[0] && (
+        <section className={css.favorites}>
+          <div className={css.favTextWrapper}>
+            <p className={css.favText}>Enjoy your favourite Campervans</p>
+          </div>
+          <div className={css.cardsWrap}>
+            <Cards cardsArr={cardsArr} />
+          </div>
+        </section>
+      )}
+    </>
   );
 };
 
