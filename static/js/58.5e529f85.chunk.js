@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkeasy_campervan=self.webpackChunkeasy_campervan||[]).push([[58],{58:(e,a,s)=>{s.r(a),s.d(a,{default:()=>c});const c=()=>{}}}]);
-//# sourceMappingURL=58.5e529f85.chunk.js.map
