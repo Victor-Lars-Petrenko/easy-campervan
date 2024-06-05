@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# <img src="./src/assets/images/logo.png" alt="logo" width="100" height="30" >
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Eng
 
-## Available Scripts
+<b>EasyCampervan</b> is a web application for booking campervans across Ukraine.
+</br> Similar to popular car rental services, EasyCampervan offers a convenient
+system for searching and booking campervans, organized in an easy-to-understand
+interface. Users can choose campervans, set rental dates, view details and
+reviews, and make reservations in real-time. </br> With intuitive features and a
+user-friendly interface, <b>EasyCampervan</b> helps travelers easily plan their
+trips and enjoy their time on the road.
 
-In the project directory, you can run:
+## Ua
 
-### `npm start`
+<b>EasyCampervan</b> є веб-додатком для бронювання кемперів по всій Україні.
+</br> Подібно до популярних сервісів оренди авто, EasyCampervan пропонує зручну
+систему для пошуку та бронювання кемперів, організовану у зрозумілому
+інтерфейсі. Користувачі можуть обирати кемпери, задавати дати оренди,
+переглядати деталі та відгуки, а також робити замовлення в режимі реального
+часу. </br> Завдяки інтуїтивно зрозумілим функціям та дружньому інтерфейсу,
+<b>EasyCampervan</b> допомагає мандрівникам легко планувати свої подорожі та
+насолоджуватися відпочинком на колесах.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+ <ul align="left">
+  <li><a href="https://nodejs.org/en" target="_blank" rel="noreferrer"> <img src="https://create-react-app.dev/img/logo.svg" alt="react" width="40" height="40"/> </a> </li>
+  <li><a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> </li>
+    <li><a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> </li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a></li> </ul>
 
-### `npm test`
+## JS libraries
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<ul align="left">
+<li><a href="https://www.npmjs.com/package/react-redux" target="_blank" rel="noreferrer"> react-redux </a></li>
+<li><a href="https://www.npmjs.com/package/redux-persist" target="_blank" rel="noreferrer"> redux-persist </a></li>
+<li><a href="https://github.com/remix-run/react-router#readme" target="_blank" rel="noreferrer"> react-router </a></li>
+<li><a href="https://axios-http.com/docs/intro" target="_blank" rel="noreferrer"> axios </a></li>
+<li><a href="https://www.npmjs.com/package/react-date-picker" target="_blank" rel="noreferrer"> react-date-picker </a></li>
+<li><a href="https://www.npmjs.com/package/react-loader-spinner" target="_blank" rel="noreferrer"> react-loader-spinner </a></li>
+<li><a href="https://www.npmjs.com/package/notiflix/v/2.7.0" target="_blank" rel="noreferrer"> Notiflix </a></li>
+</ul>
 
-### `npm run build`
+## Installation and Running
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository: git clone
+   https://github.com/yourusername/easycampervan.git
+2. Navigate to the project directory: cd easycampervan
+3. Install dependencies: npm install
+4. Start the development server: npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributing
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Contributions are welcome! Please follow these steps:
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add some feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a new Pull Request.

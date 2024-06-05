@@ -38,7 +38,6 @@ const Filters = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log(filtersState);
     dispatch(setFilter(filtersState));
   };
 
