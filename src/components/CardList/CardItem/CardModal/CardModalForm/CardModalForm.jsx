@@ -1,21 +1,36 @@
 import { useState } from "react";
 import Notiflix from "notiflix";
-
 import Button from "components/Button";
 
-import sprite from "../../../../../assets/images/icons.svg";
+import dayjs from "dayjs";
+import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 
+import sprite from "../../../../../assets/images/icons.svg";
 import css from "./CardModalForm.module.css";
 
 const initialState = {
   name: "",
   email: "",
-  bookingDate: "",
   comment: "",
+};
+
+const IconCalendar = () => {
+  return (
+    <svg className={css.iconCalendar}>
+      <use href={`${sprite}#icon-calendar`} />
+    </svg>
+  );
 };
 
 const CardModalForm = () => {
   const [formState, setFormState] = useState({ ...initialState });
+
+  const [bookingDate, setBookingDate] = useState(null);
+
+  console.log(bookingDate);
 
   const handleChange = e => {
     const { name, value } = e.target;
@@ -23,12 +38,8 @@ const CardModalForm = () => {
   };
 
   const handleSubmit = e => {
-    const { name, email, bookingDate } = formState;
-    if (
-      name.trim() === "" ||
-      email.trim() === "" ||
-      bookingDate.trim() === ""
-    ) {
+    const { name, email } = formState;
+    if (name.trim() === "" || email.trim() === "" || bookingDate === null) {
       e.preventDefault();
       Notiflix.Notify.failure(
         "Name, Email and Booking date fields cannot be empty"
@@ -62,20 +73,18 @@ const CardModalForm = () => {
         onChange={handleChange}
       />
       <div className={css.dateWrap}>
-        <input
-          className={`${css.formInput} ${css.formInputDate}`}
-          type="text"
-          required
-          placeholder="Booking date"
-          name="bookingDate"
-          value={formState.bookingDate}
-          onChange={handleChange}
-        />
-        <button type="button" className={css.calendarBtn}>
-          <svg className={css.iconCalendar}>
-            <use href={`${sprite}#icon-calendar`} />
-          </svg>
-        </button>
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <DemoContainer components={["DatePicker"]}>
+            <DatePicker
+              value={bookingDate}
+              onChange={newValue => setBookingDate(newValue)}
+              minDate={dayjs("2024-06-09")}
+              slots={{
+                openPickerIcon: IconCalendar,
+              }}
+            />
+          </DemoContainer>
+        </LocalizationProvider>
       </div>
       <textarea
         className={`${css.formInput} ${css.formTextarea}`}
