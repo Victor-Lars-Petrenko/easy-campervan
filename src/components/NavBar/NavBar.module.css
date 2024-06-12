@@ -1,9 +1,17 @@
+.header {
+  background-color: var(--categories-color);
+  height: 80px;
+}
+
 .navBar {
+  height: 100%;
+}
+
+.navList {
+  height: 100%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: var(--categories-color);
-  height: 80px;
 }
 
 .link {

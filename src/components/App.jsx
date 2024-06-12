@@ -12,7 +12,11 @@ const App = () => {
     dispatch(fetchCampers());
   }, [dispatch]);
 
-  return <AppRoutes />;
+  return (
+    <>
+      <AppRoutes />
+    </>
+  );
 };
 
 export default App;

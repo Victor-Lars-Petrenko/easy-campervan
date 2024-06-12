@@ -17,7 +17,13 @@ const NavBar = () => {
     </li>
   ));
 
-  return <ul className={css.navBar}>{elements}</ul>;
+  return (
+    <header className={css.header}>
+      <nav className={css.navBar}>
+        <ul className={css.navList}>{elements}</ul>
+      </nav>
+    </header>
+  );
 };
 
 export default NavBar;
