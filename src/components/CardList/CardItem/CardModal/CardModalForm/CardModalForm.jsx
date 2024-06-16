@@ -2,11 +2,10 @@ import { useState } from "react";
 import Notiflix from "notiflix";
 import Button from "components/Button";
 
-import dayjs from "dayjs";
 import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import { DatePicker } from "@mui/x-date-pickers/DatePicker";
+import { DesktopDatePicker } from "@mui/x-date-pickers";
 
 import sprite from "../../../../../assets/images/icons.svg";
 import css from "./CardModalForm.module.css";
@@ -29,8 +28,6 @@ const CardModalForm = () => {
   const [formState, setFormState] = useState({ ...initialState });
 
   const [bookingDate, setBookingDate] = useState(null);
-
-  console.log(bookingDate);
 
   const handleChange = e => {
     const { name, value } = e.target;
@@ -64,7 +61,7 @@ const CardModalForm = () => {
         onChange={handleChange}
       />
       <input
-        className={css.formInput}
+        className={css.formInput + " " + css.formInputEmail}
         type="text"
         required
         placeholder="Email"
@@ -72,20 +69,29 @@ const CardModalForm = () => {
         value={formState.email}
         onChange={handleChange}
       />
-      <div className={css.dateWrap}>
-        <LocalizationProvider dateAdapter={AdapterDayjs}>
-          <DemoContainer components={["DatePicker"]}>
-            <DatePicker
-              value={bookingDate}
-              onChange={newValue => setBookingDate(newValue)}
-              minDate={dayjs("2024-06-09")}
-              slots={{
-                openPickerIcon: IconCalendar,
-              }}
-            />
-          </DemoContainer>
-        </LocalizationProvider>
-      </div>
+      <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <DemoContainer components={["DatePicker"]}>
+          <DesktopDatePicker
+            value={bookingDate}
+            disablePast={true}
+            onChange={newValue => setBookingDate(newValue)}
+            label="Booking date"
+            slots={{
+              openPickerIcon: IconCalendar,
+            }}
+            slotProps={{
+              textField: {
+                style: {
+                  width: "400px",
+                  height: "56px",
+                  color: "#101828",
+                  backgroundColor: "#f7f7f7",
+                },
+              },
+            }}
+          />
+        </DemoContainer>
+      </LocalizationProvider>
       <textarea
         className={`${css.formInput} ${css.formTextarea}`}
         placeholder="Comment"

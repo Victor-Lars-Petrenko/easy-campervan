@@ -21,6 +21,10 @@ trips and enjoy their time on the road.
 <b>EasyCampervan</b> допомагає мандрівникам легко планувати свої подорожі та
 насолоджуватися відпочинком на колесах.
 
+## Made according to design
+
+[Figma](https://www.figma.com/design/fnMWH0eBB7NnoqdAiiKWsQ/Test?node-id=12-7969&t=UhAGRdQfpBMzdKnc-0)
+
 ## Technologies
 
  <ul align="left">

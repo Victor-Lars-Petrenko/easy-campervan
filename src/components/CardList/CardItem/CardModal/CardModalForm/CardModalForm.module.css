@@ -44,14 +44,8 @@
   opacity: 1;
 }
 
-.formInputDate {
-  padding: 18px 56px 18px 18px;
-  margin-bottom: 0;
-}
-
-.dateWrap {
-  position: relative;
-  margin-bottom: 14px;
+.formInputEmail {
+  margin-bottom: 6px;
 }
 
 .iconCalendar {
@@ -63,6 +57,7 @@
 
 .formTextarea {
   height: 114px;
+  margin-top: 14px;
   margin-bottom: 24px;
 }
 
